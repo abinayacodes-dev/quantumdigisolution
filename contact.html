@@ -1,0 +1,1176 @@
+<?html 
+
+
+include_once('dbfile.html');
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us </title>
+
+    <!-- head -->
+ <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- FancyBox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- local css -->
+<link rel="stylesheet" href="./assets/css/style.css" />
+<link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="page-wrap">
+
+        <!-- header -->
+       <!-- Scroll to Top Button -->
+<button id="scrollTopBtn" aria-label="Scroll to top" title="Go to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Preloader (Commented) -->
+<!-- <div id="custom-preloader">
+    <div class="loader-wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+    </div>
+</div> -->
+
+<!-- Header -->
+<header role="banner">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html" title="Quantum Digi Solutions - Home" aria-label="Quantum Digi Solutions Home">
+                <img src="./assets/image/logo-1.png"
+                     class="img-fluid"
+                     width="70"
+                     height="70"
+                     alt="Quantum Digi Solutions Logo"
+                     loading="lazy">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation menu">
+                <i class="bi bi-list" aria-hidden="true"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link html" href="index.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                           href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Services</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item " href="web-development.html">
+                                <i class="bi bi-code-slash" aria-hidden="true"></i> Web Development
+                            </a></li>
+                            <li><a class="dropdown-item " href="social-media-marketing.html">
+                                <i class="bi bi-share" aria-hidden="true"></i> Social Media Marketing
+                            </a></li>
+                            <li><a class="dropdown-item " href="search-engine-optimization.html">
+                                <i class="bi bi-graph-up" aria-hidden="true"></i> SEO Services
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Our Work Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " 
+                           href="#" id="workDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Our Work</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="workDropdown">
+                            <li><a class="dropdown-item " href="work-web-development.html">
+                                <i class="bi bi-laptop" aria-hidden="true"></i> Web Development
+                            </a></li>
+                            <li><a class="dropdown-item " href="work-digital-marketing.html">
+                                <i class="bi bi-megaphone" aria-hidden="true"></i> Digital Marketing
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="blog.html">
+                            <span>Blogs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="nav-cta-btn">
+                    <span>Get Started</span>
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Offcanvas Navigation -->
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/image/logo-.png" class="img-fluid" alt="Company Logo" loading="lazy" width="60" height="60">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close navigation menu"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 my-3">
+                        <li class="nav-item">
+                            <a class="nav-link html" href="index.html">
+                                <i class="bi bi-house-door" aria-hidden="true"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">
+                                <i class="bi bi-people" aria-hidden="true"></i> About Us
+                            </a>
+                        </li>
+                        
+                        <!-- Mobile Services Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " 
+                               href="#" id="mobileServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-grid" aria-hidden="true"></i> Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mobileServicesDropdown">
+                                <li><a class="dropdown-item " href="web-development.html">
+                                    <i class="bi bi-code-slash" aria-hidden="true"></i> Web Development
+                                </a></li>
+                                <li><a class="dropdown-item " href="social-media-marketing.html">
+                                    <i class="bi bi-share" aria-hidden="true"></i> Social Media Marketing
+                                </a></li>
+                                <li><a class="dropdown-item " href="search-engine-optimization.html">
+                                    <i class="bi bi-graph-up" aria-hidden="true"></i> SEO Services
+                                </a></li>
+                                <li><a class="dropdown-item " href="graphic-designing.html">
+                                    <i class="bi bi-brush" aria-hidden="true"></i> Graphic Design
+                                </a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Mobile Our Work Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " 
+                               href="#" id="mobileWorkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-briefcase" aria-hidden="true"></i> Our Work
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mobileWorkDropdown">
+                                <li><a class="dropdown-item " href="work-web-development.html">
+                                    <i class="bi bi-laptop" aria-hidden="true"></i> Web Development
+                                </a></li>
+                                <li><a class="dropdown-item " href="work-digital-marketing.html">
+                                    <i class="bi bi-megaphone" aria-hidden="true"></i> Digital Marketing
+                                </a></li>
+                                <li><a class="dropdown-item " href="work-graphic-designing.html">
+                                    <i class="bi bi-brush" aria-hidden="true"></i> Graphic Designing
+                                </a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="blog.html">
+                                <i class="bi bi-newspaper" aria-hidden="true"></i> Blogs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html">
+                                <i class="bi bi-envelope" aria-hidden="true"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Offcanvas Footer -->
+                    <div class="offcanvas-footer mt-3">
+                        <div class="offcanvas-contact">
+                            <a href="tel:+919876543210" class="footer-contact" title="Call us">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <span>+91 98765 43210</span>
+                            </a>
+                            <a href="mailto:info@example.com" class="footer-contact" title="Email us">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <span>info@example.com</span>
+                            </a>
+                            <a href="https://goo.gl/maps/example" target="_blank" class="footer-contact" title="Find us on Google Maps" rel="noopener noreferrer">
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <span>123 Main Street, City</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas-social">
+                            <a href="https://www.facebook.com/login" target="_blank" class="social-icon" title="Follow us on Facebook" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/login" target="_blank" class="social-icon" title="Follow us on Twitter" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank" class="social-icon" title="Follow us on Instagram" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="bi bi-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/login" target="_blank" class="social-icon" title="Connect with us on LinkedIn" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Sticky Navbar Script -->
+<script>
+    (function() {
+        'use strict';
+        
+        const navbar = document.querySelector('.navbar');
+        
+        if (navbar) {
+            let stickyOffset = navbar.offsetTop;
+            
+            const updateOffset = function() {
+                stickyOffset = navbar.offsetTop;
+            };
+            
+            let isScrolling = false;
+            const handleScroll = function() {
+                if (!isScrolling) {
+                    window.requestAnimationFrame(function() {
+                        if (window.pageYOffset > stickyOffset) {
+                            navbar.classList.add('sticky');
+                        } else {
+                            navbar.classList.remove('sticky');
+                        }
+                        isScrolling = false;
+                    });
+                    isScrolling = true;
+                }
+            };
+            
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            window.addEventListener('resize', updateOffset, { passive: true });
+            handleScroll();
+        }
+    })();
+</script>
+
+<!-- ============================================================
+     HEADER STYLES - REDUCED HEIGHT & FONT SIZE
+     ============================================================ -->
+<style>
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ============================================================
+   HEADER STYLES - REDUCED HEIGHT & FONT SIZE
+   ============================================================ */
+
+/* Navbar Base - Reduced padding */
+.navbar {
+    margin: 15px 250px;
+    border-radius: 80px;
+    padding: 4px 24px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 999;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 52px;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 6px 24px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 40px rgba(104, 77, 244, 0.10);
+    border-bottom: 2px solid rgba(104, 77, 244, 0.08);
+    min-height: 48px;
+}
+
+/* Logo - Reduced size */
+.navbar-brand {
+    padding: 0;
+    margin-right: 16px;
+}
+
+.navbar-brand img{
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   NAVIGATION LINKS - Smaller Font
+   ============================================================ */
+.navbar-nav .nav-link {
+    position: relative;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    color: #1a1a2e;
+    padding: 4px 10px;
+    margin: 0 1px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.2px;
+    text-transform: none;
+}
+
+.navbar-nav .nav-link span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Active & Hover Underline */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #684DF4, #8B6FFF);
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 50%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #684DF4;
+}
+
+.navbar-nav .nav-link.active {
+    color: #684DF4;
+    font-weight: 700;
+}
+
+/* ============================================================
+   DROPDOWN - Compact
+   ============================================================ */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+    transition: transform 0.3s ease;
+    margin-left: 4px;
+    font-size: 8px;
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(104, 77, 244, 0.10);
+    border-radius: 12px;
+    padding: 6px 4px;
+    margin-top: 8px;
+    min-width: 190px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.10);
+    animation: dropdownFade 0.3s ease forwards;
+    transform-origin: top center;
+}
+
+@keyframes dropdownFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dropdown-item {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #1a1a2e;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.2px;
+}
+
+.dropdown-item i {
+    font-size: 13px;
+    color: #684DF4;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: rgba(104, 77, 244, 0.08);
+    color: #684DF4;
+    transform: translateX(3px);
+}
+
+.dropdown-item:hover i {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.dropdown-item.active {
+    background: rgba(104, 77, 244, 0.12);
+    color: #684DF4;
+    font-weight: 600;
+}
+
+/* ============================================================
+   CTA BUTTON - Compact & Smaller Font
+   ============================================================ */
+.nav-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #fff !important;
+    background: linear-gradient(135deg, #684DF4, #8B6FFF);
+    padding: 6px 16px;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 20px rgba(104, 77, 244, 0.25);
+    text-decoration: none !important;
+    letter-spacing: 0.4px;
+    text-transform: none;
+}
+
+.nav-cta-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(104, 77, 244, 0.35);
+    color: #fff !important;
+}
+
+.nav-cta-btn i {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.nav-cta-btn:hover i {
+    transform: translateX(4px) rotate(-20deg);
+}
+
+/* ============================================================
+   MOBILE TOGGLE - Compact
+   ============================================================ */
+.navbar-toggler {
+    border: none !important;
+    padding: 6px 8px;
+    background: linear-gradient(135deg, #684DF4, #8B6FFF);
+    border-radius: 8px;
+    color: #fff !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(104, 77, 244, 0.20);
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(104, 77, 244, 0.30);
+}
+
+.navbar-toggler i {
+    font-size: 18px;
+}
+
+/* ============================================================
+   OFFCANVAS
+   ============================================================ */
+.offcanvas {
+    background: #fff;
+    width: 300px !important;
+    border: none;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.08);
+}
+
+.offcanvas-header {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(104, 77, 244, 0.06);
+}
+
+.offcanvas-header .navbar-brand img {
+    width: 42px;
+    height: 42px;
+}
+
+.offcanvas-body {
+    padding: 14px 18px;
+}
+
+.offcanvas .nav-link {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #1a1a2e;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.2px;
+}
+
+.offcanvas .nav-link i {
+    font-size: 14px;
+    color: #684DF4;
+    width: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.offcanvas .nav-link:hover {
+    background: rgba(104, 77, 244, 0.06);
+    color: #684DF4;
+}
+
+.offcanvas .nav-link:hover i {
+    transform: scale(1.2);
+}
+
+.offcanvas .nav-link.active {
+    background: rgba(104, 77, 244, 0.08);
+    color: #684DF4;
+    font-weight: 600;
+}
+
+.offcanvas .dropdown-menu {
+    background: transparent;
+    border: none;
+    padding: 0 0 0 14px;
+    margin: 0;
+    box-shadow: none;
+    animation: none;
+}
+
+.offcanvas .dropdown-item {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.offcanvas .dropdown-item i {
+    font-size: 11px;
+}
+
+/* Offcanvas Footer */
+.offcanvas-footer {
+    padding-top: 14px;
+    border-top: 1px solid rgba(104, 77, 244, 0.08);
+}
+
+.offcanvas-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #1a1a2e;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    letter-spacing: 0.2px;
+}
+
+.footer-contact i {
+    font-size: 13px;
+    color: #684DF4;
+    width: 16px;
+    transition: transform 0.3s ease;
+}
+
+.footer-contact:hover {
+    color: #684DF4;
+}
+
+.footer-contact:hover i {
+    transform: scale(1.2);
+}
+
+.offcanvas-social {
+    display: flex;
+    gap: 8px;
+}
+
+.offcanvas-social .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(104, 77, 244, 0.06);
+    color: #1a1a2e;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    font-size: 14px;
+}
+
+.offcanvas-social .social-icon:hover {
+    background: #684DF4;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(104, 77, 244, 0.25);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1199px) {
+    .navbar {
+        margin: 12px 20px;
+        padding: 4px 16px;
+        border-radius: 20px;
+        min-height: 48px;
+    }
+    
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        margin: 8px 15px;
+        padding: 4px 12px;
+        border-radius: 16px;
+        min-height: 44px;
+    }
+    
+    .navbar-brand img {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        margin: 6px 10px;
+        padding: 3px 10px;
+        border-radius: 12px;
+        min-height: 38px;
+    }
+    
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .offcanvas {
+        width: 260px !important;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .nav-cta-btn {
+        font-size: 9px;
+        padding: 4px 10px;
+    }
+}
+</style>
+
+        <main>
+
+            <section>
+                <div class="inner-sub-banner">
+                    <div class="container">
+                        <div class="sub-banner-content">
+
+                            <!-- Heading -->
+                            <h2 class="main-head main-"><span>Contact</span> Us</h2>
+
+                            <!-- Description -->
+                            <p>Get in touch with us for your web development and digital marketing needs. We’re here to help your business grow online.</p>
+
+                            <!-- Breadcrumb -->
+                            <nav class="breadcrumb">
+                                <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+                                <span class="separator"><i class="bi bi-chevron-right"></i></span>
+                                <span class="current">Contact Us</span>
+                            </nav>
+
+                            <!-- Optional Banner Overlay Image -->
+                            <div class="sub-banner-overlay">
+                                <img src="./assets/image/banner/banner-bg.png" class="img-fluid" alt="Contact Banner">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section>
+                <div class="contact-detail-inner">
+                    <div class="container">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Phone Card -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mt-3 d-flex">
+                                <div class="contact-card">
+                                    <a href="">
+                                        <div class="contact-img-overlay">
+                                            <img src="./assets/image/icons/phone.png" alt="Phone" class="img-fluid">
+                                        </div>
+                                        <div class="contact-info">
+                                            <h5>Phone</h5>
+                                            <p>+91 8144876782</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  col-sm-6 mt-3 d-flex">
+                                <div class="contact-card">
+                                    <a href="">
+                                        <div class="contact-img-overlay">
+                                            <img src="./assets/image/icons/email.png" alt="Phone" class="img-fluid">
+                                        </div>
+                                        <div class="contact-info">
+                                            <h5>Email</h5>
+                                            <p>info@quantumdigisolutions.com</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mt-3 d-flex">
+                                <div class="contact-card">
+                                    <a href="">
+                                        <div class="contact-img-overlay">
+                                            <img src="./assets/image/icons/map.png" alt="Phone" class="img-fluid">
+                                        </div>
+                                        <div class="contact-info">
+                                            <h5>Address</h5>
+                                            <p>Dindigul, Tamil Nadu</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact-detail-form">
+                    <div class="container">
+                        <div class="contact-form-header">
+
+                            <div class="row">
+                                <!-- Left Side -->
+                                <div class="col-lg-6">
+                                    <div class="contact-form-left">
+                                        <h4 class="sub-head">Get In Touch</h4>
+                                        <h2 class="main-head ">Have a Project in Mind? <span>Let's Build It Together</span></h2>
+                                    </div>
+                                </div>
+
+                                <!-- Right Side -->
+                                <div class="col-lg-6 d-flex justify-conntent-center align-items-center">
+                                    <div class="contact-form-right d-flex justify-conntent-center align-items-center">
+                                        <p>
+                                            Whether you have questions, need a quote, or want to discuss your next digital project,
+                                            we’re here to help. Fill out the form, and our team of experts will get back to you promptly.
+                                            Let’s create something amazing together!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="form-wrap">
+                            <form class="contact-form bg-white " action="https://formsubmit.co/quantumdigisolution@gmail.com" method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6 position-relative">
+                                        <span class="form-icon"><i class="bi bi-person-fill"></i></span>
+                                        <input type="text" class="form-control ps-5" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-6 position-relative">
+                                        <span class="form-icon"><i class="bi bi-telephone-fill"></i></span>
+                                        <input type="tel" class="form-control ps-5" name="phone" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 ">
+                                    <div class="col-md-6 position-relative">
+                                        <span class="form-icon"><i class="bi bi-envelope-fill"></i></span>
+                                        <input type="email" class="form-control ps-5" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6 position-relative">
+                                        <span class="form-icon"><i class="bi bi-briefcase-fill"></i></span>
+                                        <select class="form-select ps-5" name="service" required>
+                                            <option value="">Service Needed</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Social Media Marketing">Social Media Marketing</option>
+                                            <option value="SEO Optimization">SEO Optimization</option>
+                                        
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 position-relative">
+                                        <span class="form-icon"><i class="bi bi-chat-left-text-fill"></i></span>
+                                        <textarea class="form-control ps-5" name="message" rows="5" placeholder="Short Description" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="custom-btn d-flex justify-content-center align-items-center">
+                                    <button type="submit" class="btn btn-primary">Submit<i class="bi bi-arrow-right-short"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d165138.51411862942!2d76.967235!3d11.013968899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1759470445655!5m2!1sen!2sin" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section> -->
+
+
+
+
+
+
+        </main>
+
+        <!-- Footer -->
+          <footer>
+        <div class="footer-wrap">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-3 col-md-6 mt-3">
+                        <div class="foot-content">
+                            <h3>About Company</h3>
+                            <div>
+                                <p>Professionally redefine transparent ROI through low-risk
+                                    high-yield imperatives. Progressively create empowered. cost effective users via
+                                    team driven.</p>
+                                <div class="footer-social">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/15zJkTiy8n6/?mibextid=wwXIfr" target="_blank">
+        <i class="bi bi-facebook"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/quantum_digisolutions/" target="_blank">
+        <i class="bi bi-instagram"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/quantum-digi-solutions-038550422/" target="_blank">
+        <i class="bi bi-linkedin"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/918144876782" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    
+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-6  mt-3">
+                        <div class="foot-content">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html"><i class="bi bi-arrow-right-short"></i>Home</a></li>
+                                <li><a href="about.html"><i class="bi bi-arrow-right-short"></i>About Us</a></li>
+                                <li><a href="project.html"><i class="bi bi-arrow-right-short"></i> Our Projects</a></li>
+                                <li><a href="blog.html"><i class="bi bi-arrow-right-short"></i>Our Blog</a></li>
+                                <li><a href="contact.html"><i class="bi bi-arrow-right-short"></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6  mt-3">
+                        <div class="foot-content">
+                            <h3>IT SERVICES</h3>
+                            <ul class="menu">
+                                <li><a href="web-development.html"><i class="bi bi-arrow-right-short"></i> Web Design & Development</a></li>
+                                <li><a href="social-media-marketing.html"><i class="bi bi-arrow-right-short"></i> Digital Marketing</a></li>
+                                <li><a href="search-engine-optimization.html"><i class="bi bi-arrow-right-short"></i> SEO Services</a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6  mt-3">
+                        <div class="foot-content">
+                            <h3>Our Works</h3>
+                            <ul class="menu">
+                                <li><a href="work-web-development.html"><i class="bi bi-arrow-right-short"></i> Web Design & Development</a></li>
+                                <li><a href="work-digital-marketing.html"><i class="bi bi-arrow-right-short"></i> Search Engine Optimization</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+       <div class="copyright-wrap">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center text-md-start">
+                    <p class="copyright-text">
+                        &copy; <span id="currentYear"></span> 
+                        <a href="index.html" class="copyright-brand">Quantum Digi Solutions</a>. 
+                        All Rights Reserved.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="coming.html">Terms & Conditions</a></li>
+                            <li><a href="coming.html">Privacy Policy</a></li>
+                            <li><a href="coming.html">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="footer-left">
+            <img src="./assets/image/home/footer-left.svg" class="img-fluid" alt="shape">
+        </div>
+        <!-- <div class="shape-right">
+            <div class="particle-1" id="particle-5"></div>
+        </div>  -->
+    </footer>
+
+    </div>
+
+    <!-- Script -->
+    <!-- Bootstrap JS Bundle (Popper included) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Include jQuery and Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- FancyBox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="../assets/css/particles-config.js"></script>
+<!-- year js -->
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+<!-- navbar active script -->
+<script>
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+    const currentUrl = window.location.href;
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
+<!-- navbar fixed stickey -->
+<!-- <script>
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbarfix');
+        } else {
+            navbar.classList.remove('navbarfix');
+        }
+    });
+</script> -->
+
+
+<!-- testimonial carousel -->
+<script>
+    $('.testimonial-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        items: 2,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            }
+        }
+    });
+    $('.custom-next').click(function() {
+        $('.testimonial-carousel').trigger('next.owl.carousel');
+    });
+    $('.custom-prev').click(function() {
+        $('.testimonial-carousel').trigger('prev.owl.carousel');
+    });
+</script>
+
+<!-- price tab link js -->
+<script>
+    const priceWrap = document.querySelector('.price-wrap');
+
+    const desktopTabs = priceWrap.querySelectorAll('.tab-item');
+    const tabPanes = priceWrap.querySelectorAll('.tab-pane');
+
+    desktopTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            desktopTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            tabPanes.forEach(p => p.classList.remove('active'));
+            priceWrap.querySelector(`#${tab.dataset.tab}`).classList.add('active');
+
+            const dropdown = priceWrap.querySelector('#priceTabSelector');
+            dropdown.value = tab.dataset.tab;
+        });
+    });
+    const tabSelector = priceWrap.querySelector('#priceTabSelector');
+    tabSelector.addEventListener('change', (e) => {
+        tabPanes.forEach(p => p.classList.remove('active'));
+        priceWrap.querySelector(`#${e.target.value}`).classList.add('active');
+
+        desktopTabs.forEach(t => t.classList.remove('active'));
+        const desktopTab = priceWrap.querySelector(`.tab-item[data-tab="${e.target.value}"]`);
+        if (desktopTab) desktopTab.classList.add('active');
+    });
+</script>
+
+<!-- click to top btn -->
+<script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            scrollTopBtn.style.display = "flex";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+<!-- preloader -->
+<script>
+ 
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const preloader = document.getElementById('custom-preloader');
+            preloader.style.opacity = '0';
+            preloader.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500); 
+        }, 1500); 
+    });
+</script>
+
+</body>
+
+</html>
